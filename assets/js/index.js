@@ -33,7 +33,7 @@ let home = document.getElementById('home');
 
 window.addEventListener('scroll',(e)=>{
     
-    if(window.scrollY > aboutSection.offsetHeight ){
+    if(window.scrollY > aboutSection.offsetTop ){
         document.getElementById('navbarNavAltMarkup').classList.add('bg-dark2')
     }
     else{
@@ -41,14 +41,14 @@ window.addEventListener('scroll',(e)=>{
     }
 
     // aboutactive
-    if(window.scrollY  > 894.4000244140625        && window.scrollY < servicesSection.offsetTop){
+    if(window.scrollY  > aboutSection.offsetTop         && window.scrollY < servicesSection.offsetTop-80){
         about.classList.add('active');
         home.classList.remove('active');
         services.classList.remove('active');
         console.log("act")        
     }
     // serviceactive
-    else if(window.scrollY > servicesSection.offsetTop && window.scrollY < footer.offsetTop){
+    else if(window.scrollY >= servicesSection.offsetTop-80 && window.scrollY < footer.offsetTop){
         services.classList.add('active');
         home.classList.remove('active');
         about.classList.remove('active');
