@@ -24,7 +24,7 @@ let servicesSection  = document.querySelector('.services');
 // let home = document.querySelector('.home');
 // let headerSection = document.querySelector('.intro');
 let aboutSection  = document.querySelector('.about');
-let footer = document.querySelector('.footer');
+let footer = document.getElementById('footerSection');
 // navlinks
 let about = document.getElementById('about');
 let services = document.getElementById('services');
@@ -49,6 +49,13 @@ window.addEventListener('scroll',(e)=>{
     }
     // serviceactive
     else if(window.scrollY >= servicesSection.offsetTop-80 && window.scrollY < footer.offsetTop){
+        services.classList.add('active');
+        home.classList.remove('active');
+        about.classList.remove('active');
+        console.log("act")        
+    }
+    //contact
+    else if(window.scrollY >= footer.offsetTop-800){
         services.classList.add('active');
         home.classList.remove('active');
         about.classList.remove('active');

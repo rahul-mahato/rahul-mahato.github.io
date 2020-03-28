@@ -36,15 +36,15 @@ body,html {
 /* -----------about---------- */
 
 .about-main {
-  font-size: 130px;
+  font-size: 170px;
   letter-spacing: 10px;
-  color: #38383863;
+  color: #3838383d;
 
   font-weight: 900;
 }
 .about-sub {
   position: absolute;
-  top: 80px;
+  top: 110px;
   left: 30px;
   font-size: 40px;
   z-index: 999 !important;
@@ -86,7 +86,7 @@ body,html {
   position: -webkit-sticky;
   top: 90px;
   left: 0;
-  background-color: #c3073f;
+  /* background-color: #c3073f; */
 }
 
 /* Misc */
