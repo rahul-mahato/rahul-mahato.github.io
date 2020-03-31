@@ -42,7 +42,7 @@
     </div>
 
     <div class="mobile-nav-wrap">
-
+        <div class="sidebar-overlay" onclick="closeNav()"></div>
         <div id="mySidebar" class="sidebar" onclick="closeNav()">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="navbar-nav text-center">
@@ -54,7 +54,9 @@
             </div>
         </div>
 
-        <div id="main" style="width: 100%; position: fixed; z-index: 99999;">
+
+        <div id="main"
+            style="width: 100%; position: fixed; z-index: 99999;background-color:  rgba(17, 17, 17, 0.857);box-shadow: #6e0a1e 0px 0px 6px 1px;">
             <button class="openbtn" onclick="openNav()">&#9776; </button>
 
         </div>
@@ -149,7 +151,7 @@
         <div class="container-fluid text-light">
             <div class="row justify-content-center">
                 <div class="col-sm-11 col-md-5 py-5 align-self-center text-center " style="background-color: #c3073f;">
-                    <div class="services-left " data-aos="fade-right" >
+                    <div class="services-left " data-aos="fade-right">
 
                         <h2 class=" pb-4 display-3  font-weight-bold row justify-content-center "><span
                                 class=" lead font-weight-bold  align-self-center mx-2">What</span>
@@ -163,7 +165,7 @@
                         style="opacity: 0.08;position: absolute;height: 40%;max-width: 100%; max-height: 100%;" />
                     <div class="row text-center">
 
-                        <div class="col-sm-10 col-md-11 " data-aos="fade-up" >
+                        <div class="col-sm-10 col-md-11 " data-aos="fade-up">
                             <div class="row justiy-content-center ">
                                 <div class="col-sm-10 col-md-2 align-self-center">
                                     <img src="./assets/img/backend.svg" width="80%" />
@@ -176,7 +178,7 @@
                             </div>
                             <hr class="bg-secondary" />
                         </div>
-                        <div class="col-sm-10 col-md-11" data-aos="fade-up" >
+                        <div class="col-sm-10 col-md-11" data-aos="fade-up">
                             <div class="row">
                                 <div class="col-sm-10 col-md-2 align-self-center">
 
@@ -191,7 +193,7 @@
                             </div>
                             <hr class="bg-secondary" />
                         </div>
-                        <div class="col-sm-10 col-md-11" data-aos="fade-up" >
+                        <div class="col-sm-10 col-md-11" data-aos="fade-up">
                             <div class="row">
                                 <div class="col-sm-5 col-md-2 align-self-center">
                                     <img src="./assets/img/api.svg" style="width: 80%;" />
@@ -207,7 +209,7 @@
                             </div>
                             <hr class="bg-secondary" />
                         </div>
-                        <div class="col-sm-10 col-md-11" data-aos="fade-up" >
+                        <div class="col-sm-10 col-md-11" data-aos="fade-up">
                             <div class="row">
                                 <div class="col-sm-10 col-md-2 align-self-center">
                                     <img src="./assets/img/db.svg" width="80%" />
@@ -259,8 +261,7 @@
                 Experiences</h2>
 
             <div class="row justify-content-center ">
-                <a class="col-md-3 prevwork-box  col-sm-12" href="https://courses.stepupanalytics.com/" target="_blank"
-                    >
+                <a class="col-md-3 prevwork-box  col-sm-12" href="https://courses.stepupanalytics.com/" target="_blank">
                     <div class="text-center row justify-content-center mx-auto align-items-center"
                         style="height: 150px;max-width: 90%;">
                         <img src="assets/img/prev-works/stepup.png" height="100%" class="mb-2" />
@@ -357,7 +358,7 @@
     </section>
 
     <section class="footer mb-0 mt-5  " style="background-color: #000;padding-top: 80px;" id="footerSection"
-        data-aos="fade-in" >
+        data-aos="fade-in">
         <div class="row pb-0 justify-content-center align-items-center">
             <div class="col-sm-10 px-2 py-4 text-center order-md-1 col-md-6">
 
@@ -478,7 +479,7 @@
         document.addEventListener("DOMContentLoaded", (e) => {
             setTimeout(() => {
                 document.querySelector('.spinner-wrapper').classList.add("d-none");
-            }, 1000)
+            }, 800)
 
         })
     </script>
