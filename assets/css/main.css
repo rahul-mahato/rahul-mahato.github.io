@@ -43,14 +43,24 @@ a{
   display: none;
 }
 
+
+.sidebar-overlay{
+  display: none;
+  position:fixed;
+  background-color: rgba(0, 0, 0, 0.918);
+  height: 100vh;
+  width: 100vh;
+  z-index: 99;
+}
+
 .sidebar {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 999; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #111111d9; /* Black*/
+  background-color: #1e1d1de5; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -59,7 +69,7 @@ a{
 /* The sidebar links */
 .sidebar a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
   color: #ddd;
   display: block;
   transition: 0.3s;
@@ -88,8 +98,8 @@ a{
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: rgba(17, 17, 17, 0.741);
-  color: white;
+  background-color: rgba(17, 17, 17, 0);
+  color: rgb(238, 219, 219);
   padding: 10px 15px;
   border: none;
 }
@@ -101,7 +111,7 @@ a{
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
