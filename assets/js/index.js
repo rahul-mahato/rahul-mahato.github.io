@@ -43,12 +43,12 @@ window.addEventListener('scroll', (e) => {
         document.querySelector('.navbar').style.boxShadow = "none"
     }
 
-    if (window.scrollY > aboutSection.offsetTop && window.scrollY < servicesSection.offsetTop -90) {
+    if (window.scrollY > aboutSection.offsetTop && window.scrollY < servicesSection.offsetTop - 90) {
         // about.classList.add('active');
-        home.forEach(e=>{
+        home.forEach(e => {
             e.classList.remove('active');
         })
-        services.forEach(e=>{
+        services.forEach(e => {
             e.classList.remove('active');
         })
         about.forEach(element => {
@@ -59,33 +59,33 @@ window.addEventListener('scroll', (e) => {
         })
     }
 
-    else if (window.scrollY >= servicesSection.offsetTop - 80 && window.scrollY < footer.offsetTop -100) {
-        services.forEach(e=>{e.classList.add('active')});
-        home.forEach(e=>{e.classList.remove('active')});
+    else if (window.scrollY >= servicesSection.offsetTop - 80 && window.scrollY < footer.offsetTop - 100) {
+        services.forEach(e => { e.classList.add('active') });
+        home.forEach(e => { e.classList.remove('active') });
         about.forEach(element => {
             element.classList.remove('active');
         })
         contact.forEach(element => {
             element.classList.remove('active');
         })
-        
+
     }
     //contact
     else if (window.scrollY >= footer.offsetTop - 1200) {
-        services.forEach(e=>e.classList.remove('active'))
-        home.forEach(e=>e.classList.remove('active'));
-        about.forEach(e=>e.classList.remove('active'));
+        services.forEach(e => e.classList.remove('active'))
+        home.forEach(e => e.classList.remove('active'));
+        about.forEach(e => e.classList.remove('active'));
         contact.forEach(element => {
             element.classList.add('active');
-        })   
+        })
     }
     else {
-        services.forEach(e=>e.classList.remove('active'))
-        home.forEach(e=>e.classList.add('active'));
-        about.forEach(e=>e.classList.remove('active'));
+        services.forEach(e => e.classList.remove('active'))
+        home.forEach(e => e.classList.add('active'));
+        about.forEach(e => e.classList.remove('active'));
         contact.forEach(element => {
             element.classList.remove('active');
-        }) 
+        })
         // about.classList.remove('active');
     }
 
@@ -97,14 +97,15 @@ let sidebar = 0;
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
     document.getElementById("main").style.display = "none";
-    sidebar = 1;
+    document.querySelector(".sidebar-overlay").style.display = "block";
+
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.display = "block";
-    sidebar = 0;
+    document.querySelector(".sidebar-overlay").style.display = "none";
 }
 
 if (sidebar) {
