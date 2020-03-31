@@ -20,29 +20,62 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css" rel="stylesheet">
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    <script src="ttps://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <title>Rahul Mahato</title>
     <link rel="icon" href="./favicon.png" type="image/gif" sizes="16x16">
 </head>
 
-<body class="bg-dark ">
+
+<body class="bg-dark body">
+    <div class="spinner-wrapper ">
+        <div id="particles-js-spin" style="position: absolute; width: 100%; height: 100vh;z-index: 999999;"></div>
+        <div class="spinner">
+            <img src="./assets/img/preloader.gif">
+        </div>
+    </div>
+
+    <div class="mobile-nav-wrap">
+
+        <div id="mySidebar" class="sidebar" onclick="closeNav()">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="navbar-nav text-center">
+                <a class="nav-item nav-link active homenav" href="#">Home </a>
+                <a class="nav-item nav-link aboutnav" href="#aboutSection">About</a>
+                <a class="nav-item nav-link servicenav" href="#servicesSection">Services</a>
+                <a class="nav-item nav-link contactnav" href="#footerSection">Contact</a>
+
+            </div>
+        </div>
+
+        <div id="main" style="width: 100%; position: fixed; z-index: 99999;">
+            <button class="openbtn" onclick="openNav()">&#9776; </button>
+
+        </div>
+
+    </div>
     <nav class="navbar mt-0 p-0 navbar-expand-lg navbar-dark " id="navbar">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse  navbar-collapse py-4 mt-0  " id="navbarNavAltMarkup">
+
+        <div class="  navbar-collapse py-4 mt-0  " id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto mr-5">
-                <a class="nav-item nav-link active" id="home" href="#">Home </a>
-                <a class="nav-item nav-link" href="#aboutSection" id="about">About</a>
-                <a class="nav-item nav-link" href="#servicesSection" id="services">Services</a>
-                <a class="nav-item nav-link" href="#footerSection" id="contact">Contact</a>
+                <a class="nav-item nav-link active homenav" href="#">Home </a>
+                <a class="nav-item nav-link aboutnav" href="#aboutSection">About</a>
+                <a class="nav-item nav-link servicenav" href="#servicesSection">Services</a>
+                <a class="nav-item nav-link contactnav" href="#footerSection">Contact</a>
 
             </div>
         </div>
     </nav>
+
     <header class="intro row justify-content-center">
+        <div id="particles-js" style="position: absolute; width: 100%; height: 100vh;"></div>
         <div class="col-sm-12 col-md-6 col-lg-5 align-self-center">
             <div class="name-intro1 animated slow ">
                 <h5 class="text-center text-secondary">HELLO &nbsp; I'M</h5>
@@ -59,9 +92,9 @@
     <section class="about mb-5 py-5" id="aboutSection">
         <div class="container-fluid mt-5">
             <div class="row pt-5 justify-content-center">
-                <div class="col-sm-12 col-md-6 col-lg-4" style="position: sticky;">
-                    <img src="./assets/img/about.png" alt="Rahul Img" data-aos="zoom-out" data-aos-duration="1500"
-                        style="border-radius: 50%; max-width: 70%;max-height: 70%; ">
+                <div class="col-sm-12 col-md-6 col-lg-4 text-center" style="position: sticky;">
+                    <img src="./assets/img/about.png" alt="Rahul Img" class="border border-dark"
+                        style="border-radius: 50%; max-width: 80%;max-height: 80%;box-shadow: #c3073f5c 6px 5px 70px 20px ;">
                 </div>
                 <div class="col-sm-12 col-md-6  col-lg-6">
                     <h1 class=" about-main" data-aos="fade-right">ABOUT</h1>
@@ -70,20 +103,20 @@
                         <h5 class=" lead about-sub font-weight-bold px-1" data-aos="fade-in" data-aos-delay="200">
                             Hi I'm Rahul Mahato
                         </h5>
-                        <p class="lead font-weight-normal text-justify" data-aos="fade-in" data-aos-delay="300"> An
-                            undergraduate currently pursuing B.Tech in
-                            Computer Science.Have a keen interest in Full
-                            Stack Web Development and is searching for jobs/internships in that domain.
-                        </p>
 
 
 
-                        <a class="resume  mb-4 text-primary-2 font-weight-bold" data-aos="fade-in" href="./assets/Rahul Resume.pdf" target="_blank">Check Out my
+                        <div id="typed1" class="lead font-weight-normal text-justify pb-3"></div>
+
+
+                        <a class="resume  mb-4 text-primary-2 font-weight-bold" data-aos="fade-in"
+                            href="./assets/Rahul Resume.pdf" target="_blank">Check Out my
                             resume</a>
                     </div>
 
                     <div class="social-connect ml-1 py-5 my-4 d-flex row " data-aos="fade-in">
-                        <p class="px-3  text-secondary d-inline-block col-sm-12 col-md-4  pt-1 align-self-center">Connect
+                        <p class="px-3  text-secondary d-inline-block col-sm-12 col-md-4  pt-1 align-self-center">
+                            Connect
                             with me </p>
                         <div class="col-md-8 col-sm-12">
 
@@ -116,16 +149,16 @@
         <div class="container-fluid text-light">
             <div class="row justify-content-center">
                 <div class="col-sm-11 col-md-5 py-5 align-self-center text-center " style="background-color: #c3073f;">
-                    <div class="services-left " data-aos="fade-right" data-aos-delay="200" >
+                    <div class="services-left " data-aos="fade-right" data-aos-delay="200">
 
-                        <h2 class=" pb-4 display-3  font-weight-bold row justify-content-center " ><span
+                        <h2 class=" pb-4 display-3  font-weight-bold row justify-content-center "><span
                                 class=" lead font-weight-bold  align-self-center mx-2">What</span>
                             Services <span class=" lead font-weight-bold  align-self-end mx-2 ">I provide</span>
                         </h2><br />
                         <img src="./assets/img/services-left2.svg" width="60%" class="my-5" />
                     </div>
                 </div>
-                <div class="col-sm-10 col-md-7 py-3 text-light1" >
+                <div class="col-sm-10 col-md-7 py-3 text-light1">
                     <img src="./assets/img/services.svg" class=""
                         style="opacity: 0.08;position: absolute;height: 40%;max-width: 100%; max-height: 100%;" />
                     <div class="row text-center">
@@ -195,120 +228,257 @@
             </div>
         </div>
     </section>
+    <section class="previous-works px-2 py-5 " style="background-color: #252424;">
+        <!-- <div class="timeline">
+            <div class="container-box left text-dark">
+              <div class="content">
+                <div class="row">
+                    <h4 class="text-center text-primary2 font-weight-bold">
+                        Stepup Analytics
+                        <span><img src="./assets/img/prev-works/stepup.png" width="70%" /></span>
+                    </h4>
+                       
+                </div>
+                
+              </div>
+              <p class="p-3  position-absolute" style="top: 0;right: 0;">
+                Oct,2019 - March ,2020
+            </p> 
+            </div>
+            <div class="container-box right">
+              <div class="content text-secondary">
+                <h2>2016</h2>
+                <p>Lorem ipsum..</p>
+              </div>
+            </div>
+          </div> -->
+        <div class="container-fluid">
 
-    <section class="testimonials"></section>
+            <!-- <div class="display-3 font-weight-bold text-primary">Previous Experiences</div> -->
+            <h2 class="experience-title font-weight-bold text-right  text-primary " style="letter-spacing: 3px;">
+                Experiences</h2>
 
-    <section class="footer mb-0 pt-5 " style="background-color: #1a1e1e;padding-top: 80px;" id="footerSection" data-aos="fade-in" data-aos-delay="8000">
-        <div class="row pb-0">
-            <div class="col-sm-10  col-md-7">
-                <h4 class=" display-4 px-5 ">
-                    Contact me
-                </h4>
-                <hr class="bg-secondary w-25 mr-auto mx-5" />
-                <br />
-                <div class="row justify-content-left">
-                    <form class="col-sm-12 col-md-10">
-                        <div class="row justify-content-center">
+            <div class="row justify-content-center ">
+                <a class="col-md-3 prevwork-box  col-sm-12" href="https://courses.stepupanalytics.com/" target="_blank"
+                    data-aos="fade-up">
+                    <div class="text-center row justify-content-center mx-auto align-items-center"
+                        style="height: 150px;max-width: 90%;">
+                        <img src="assets/img/prev-works/stepup.png" height="100%" class="mb-2" />
+                    </div>
+                    <hr />
+                    <h5 class="text-dark font-weight-bold text-justify p-2" style="letter-spacing: 1px;">
+                        An intern here revamping their courses website using latest technology MERN STACK (MongoDb,
+                        ExpressJS ,
+                        ReactJs
+                        , NodeJs)
+                    </h5>
+                </a>
+                <a class="col-md-3 prevwork-box  col-sm-12" href="https://www.codepth.com/" target="_blank">
+                    <div class="text-center row justify-content-center mx-auto align-items-center"
+                        style="height: 150px;max-width: 90%;">
+                        <img src="assets/img/prev-works/arss.png" height="100%" class="mb-2" />
+                    </div>
+                    <hr />
+                    <h5 class="text-dark font-weight-bold text-justify p-2" style="letter-spacing: 1px;">Built a
+                        Weighbridge Management and Ticketing desktop application using ElectronJs .</h5>
+                </a>
+                <a class="col-md-3 prevwork-box  col-sm-12" href="https://www.codepth.com/" target="_blank">
+                    <div class="text-center row justify-content-center mx-auto align-items-center"
+                        style="height: 150px;max-width: 90%;">
+                        <img src="assets/img/prev-works/codepthv2.png" height="100%" class="mb-2" />
+                    </div>
+                    <hr />
+                    <h5 class="text-dark font-weight-bold text-justify p-2" style="letter-spacing: 1px;">A senior
+                        developer here. I have worked with a few projects for Codepth .</h5>
+                </a>
+                <a class="col-md-4 prevwork-box  col-sm-12" href="https://www.hrconsultant.co.in/" target="_blank">
+                    <div class="text-center row justify-content-center mx-auto align-items-center"
+                        style="height: 150px;max-width: 90%;">
+                        <img src="assets/img/prev-works/hrlight.png" width="90%" class="mb-4" />
+                    </div>
+                    <hr />
+                    <h5 class="text-dark font-weight-bold text-justify px-3 py-2" style="letter-spacing: 1px;">A
+                        website
+                        for Job Seekers , built using the firebase services . </h5>
+                </a>
+                <a class="col-md-4 prevwork-box  col-sm-12" href="https://naarisaarthi.herokuapp.com/" target="_blank">
+                    <div class="text-center row justify-content-center mx-auto align-items-center"
+                        style="height: 150px;max-width: 90%;">
+                        <img src="assets/img/prev-works/naari.png" height="100%" class="mb-2" />
+                    </div>
+                    <hr />
+                    <h5 class="text-dark font-weight-bold  text-justify p-2" style="letter-spacing: 1px;">Freelanced
+                        this
+                        website for a Creative Idea </h5>
+                </a>
+                <a class="col-md-4 prevwork-box  col-sm-12" href="http://joneswealthmgt.com/" target="_blank">
+                    <div class="text-center row justify-content-center mx-auto align-items-center"
+                        style="height: 150px;max-width: 90%;">
+                        <img src="assets/img/prev-works/jonaswealthlogo.png" width="90%" class="mb-2" />
+
+                    </div>
+                    <hr />
+                    <h5 class="text-dark font-weight-bold text-justify text-center p-2" style="letter-spacing: 1px;">
+                        Freelance Project </h5>
+                </a>
+                <div class="col-md-4 prevwork-box col-sm-12">
+                    <div class="text-center row justify-content-center mx-auto align-items-center"
+                        style="height: 150px;max-width: 90%;">
+                        <img src="assets/img/prev-works/ardentlogo.png" width="90%" class="mb-2" />
+
+                    </div>
+                    <hr />
+                    <h5 class="text-dark font-weight-bold text-justify p-2" style="letter-spacing: 1px;">A Trainee
+                        Software Engineer . Taught a batch of students the course of M.E.A.N Stack Development . </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+
+        <div class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">...</div>
+                    <div class="owl-item">...</div>
+                    <div class="owl-item">...</div>
+                </div>
+            </div>
+            <div class="owl-nav">
+                <div class="owl-prev">prev</div>
+                <div class="owl-next">next</div>
+            </div>
+            <div class="owl-dots">
+                <div class="owl-dot active"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer mb-0 mt-5  " style="background-color: #000;padding-top: 80px;" id="footerSection"
+        data-aos="fade-in" data-aos-delay="8000">
+        <div class="row pb-0 justify-content-center align-items-center">
+            <div class="col-sm-10 px-2 py-4 text-center order-md-1 col-md-6">
+
+                <div class="row justify-content-left mx-auto">
+                    <form class="col-sm-10 col-md-10">
+                        <div class="row justify-content-center px-4">
 
                             <div class=" col-md-5 col-sm-12 my-2">
 
-                                <label class="bg-dark text-primary font-weight-bold">Name</label>
+                                <!-- <label class="bg-dark text-primary font-weight-bold">Name</label> -->
 
-                                <input class="form-control">
+                                <input class="form-control" placeholder="Name">
                             </div>
                             <div class=" col-md-5 col-sm-12 my-2">
 
-                                <label class=" bg-dark text-primary font-weight-bold">Mobile</label>
+                                <!-- <label class=" bg-dark text-primary font-weight-bold">Mobile</label> -->
 
-                                <input class="form-control">
+                                <input class="form-control" placeholder="Mobile">
                             </div>
                             <div class=" col-md-10 col-sm-12 my-2">
 
-                                <label class="bg-dark text-primary font-weight-bold">Email</label>
+                                <!-- <label class="bg-dark text-primary font-weight-bold">Email</label> -->
 
-                                <input class="form-control">
+                                <input class="form-control" placeholder="Email">
                             </div>
                             <div class=" col-md-10 col-sm-12 my-2">
 
-                                <label class=" bg-dark text-primary font-weight-bold">Message</label>
+                                <!-- <label class=" bg-dark text-primary font-weight-bold">Message</label> -->
 
-                                <textarea rows="4" class="col-auto form-control"></textarea>
+                                <textarea rows="4" placeholder="Message" class="col-auto form-control"></textarea>
                             </div>
+                            <div class="col-md-5 col-sm-8 mt-4">
 
-                            <button class="col-md-5 mt-4 col-sm-12 float-right btn btn-outline-danger">submit</button>
+                                <button class="px-5 btn btn-outline-danger" style="border-radius: 0;">submit</button>
+                            </div>
 
                         </div>
 
                     </form>
                 </div>
             </div>
-            <div class="col-sm-12 align-self-center col-md-5 col-lg-4 text-secondary2">
-                <div class="row">
-                    <div class="col-sm-12  my-2 row">
-                        <img src="./assets/img/email.svg" class=" col-sm-2 align-self-center " /><span class="col-10 align-self-center ">rahul.122293@gmail.com</span>
+            <div class="col-sm-12 col-md-5   order-md-2 order-first text-secondary2">
+                <div class="row text-left px-3 ">
+                    <div class="col-12 mb-4 ">
+
+                        <div class="contact-main border-bottom pb-2">Dont Be a Stranger</div>
+                        <span class="contact-sub ">Just Say Hello</span>
+                        <div id="typed-strings">
+                            <p class="lead">Feel free to get in touch with me I am always
+                                open to discussing new projects , creative ideas or opportunities to be a part of your
+                                visions
+                            </p>
+
+                        </div>
+                        <div id="typed2" class="text-light lead mt-3 text-justify"></div>
                     </div>
-                    <div class="col-sm-12  my-2 row">
-                        <img src="./assets/img/phone.svg" class=" col-sm-2 align-self-center" /><span class="col-10 align-self-center ">+91-7749803313</span>
+                    <div class="col-md-12 mb-4">
+
+
+
+                        <a href="https://www.facebook.com/rocker785" class="col-sm-2 px-2" target="_blank"><i
+                                class="fa fa-facebook fa-2x  text-primary-2" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/rahul-mahato-550692176" class="col-sm-2   px-2"
+                            target="_blank"><i class="fa fa-linkedin fa-2x  text-primary-2" aria-hidden="true"></i></a>
+                        <!-- <a href="#"><i class="fa fa-twitter fa-2x  text-primary-2" aria-hidden="true"></i></a> -->
+                        <a href="https://github.com/rocker785" target="_blank" class="col-sm-2  px-2"><i
+                                class="fa fa-github fa-2x text-primary-2" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/_.rahul_mahato/" target="_blank" class="col-sm-2  px-2"><i
+                                class="fa fa-instagram fa-2x text-primary-2" aria-hidden="true"></i></a>
+
+
                     </div>
-                    <div class="col-sm-12  my-2 row">
-                        <img src="./assets/img/email.svg" class=" col-sm-2 align-self-center" /><span class="col-10 align-self-center ">122/1D , Motilal Nehru Road , <br> Kolkata - 700029</span>
+                    <div class="col-sm-12  my-2 d-flex align-items-center">
+                        <div>
+
+                            <img src="./assets/img/email.svg" class="  align-self-center mr-2"
+                                style="width: 20px;" /><span class="align-self-center ">rahul.122293@gmail.com</span>
+                        </div>
                     </div>
+                    <div class="col-sm-12  my-2 d-flex align-items-center ">
+                        <img src="./assets/img/phone.svg" class="  align-self-center mr-2" style="width: 20px;" /><span
+                            class=" align-self-cesnter ">+91-7749803313</span>
+                    </div>
+                    <div class="col-sm-12  my-2 d-flex align-items-center ">
+                        <img src="./assets/img/house.svg" class="  align-self-center mr-2" style="width: 20px;" />
+                        <span class="align-self-center ">122/1D , Motilal Nehru Road , Kolkata -
+                            700029</span>
+                    </div>
+
                 </div>
 
             </div>
-            <div class="col-12 px-5 py-3 mt-5  m-0 " style="background-color: black;">
+            <div class="col-12 px-5 py-3 mt-5 order-sm-2  order-md-2 m-0 " style="background-color: black;">
                 &copy; Copyright 2020&nbsp; | &nbsp;All Rights Reserved&nbsp; | &nbsp;Designed by me
             </div>
         </div>
     </section>
 
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/app.js"></script>
+
     <script>
+
+
         AOS.init();
     </script>
+
     <script>
-document.onkeydown = function(e) {
-if(event.keyCode == 123) {
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
-return false;
-}
-}
-        $(document).bind("contextmenu",function(e) {
- e.preventDefault();
-});
-$(document).keydown(function(e){
-    if(e.ctrlKey && (e.which === 83)){
-       e.preventDefault();
-       return false;
-    }
-});
-</script>
+
+        var typed = new Typed('#typed1', {
+            strings: ["An undergraduate currently pursuing B.Tech in Computer Science.", "I have a keen interest in Full Stack Web Development and so I am searching for jobs/internships in that domain."],
+            typeSpeed: 10,
+            loop: true,
+            backDelay: 15000,
+        });
+    </script>
+    <script>
+       document.addEventListener("DOMContentLoaded",(e)=>{
+           document.querySelector('.spinner-wrapper').classList.add("d-none");
+       })
+    </script>
 </body>
 
 </html>
