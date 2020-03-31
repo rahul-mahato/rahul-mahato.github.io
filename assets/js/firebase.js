@@ -31,7 +31,7 @@ contactform.addEventListener('submit', e => {
             email: email,
             message: message
         })
-        .then(doc => {
+        .then(docRef => {
 
             console.log("Document written with ID: ", docRef.id);
             msg.classList.remove('text-warning');
