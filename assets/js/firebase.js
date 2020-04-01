@@ -35,7 +35,7 @@ contactform.addEventListener('submit', e => {
 
             console.log("Document written with ID: ", docRef.id);
             msg.classList.remove('text-warning');
-            msg.innerHTML = "Your response has been successfully submitted"
+            msg.innerHTML = "Your response has been successfully submitted. You will receive a call/mail from me in 24 hours ."
 
         })
         .catch(function (error) {
