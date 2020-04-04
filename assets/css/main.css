@@ -426,6 +426,17 @@ i:hover {
 }
 
 
+/* testimonials */
+
+
+.testimonial-main {
+  position: relative;
+  font-size: 75px;
+  letter-spacing: 3px;
+  color: #6259593d;
+  font-weight: 800;
+}
+
 
 .testimonials-img{
   width: 100px !important;
