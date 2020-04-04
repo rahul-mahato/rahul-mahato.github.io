@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    <script src="ttps://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <title>Rahul Mahato</title>
+    <link rel="icon" href="./favicon.png" type="image/gif" sizes="16x16">
+</head>
+
+
+<body class="bg-dark body">
+    <div class="spinner-wrapper ">
+        <!-- <div id="particles-js-spin" style="position: absolute; width: 100%; height: 100vh;z-index: 999999;"></div> -->
+        <div class="spinner">
+            <img src="./assets/img/preloader.gif" style="width: 400px;">
+        </div>
+    </div>
+
+    <div class="mobile-nav-wrap">
+        <div class="sidebar-overlay" onclick="closeNav()"></div>
+        <div id="mySidebar" class="sidebar" onclick="closeNav()">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="navbar-nav text-center">
+                <a class="nav-item nav-link homenav" href="./index.html#">Home </a>
+                <a class="nav-item nav-link aboutnav" href="./index.html#aboutSection">About</a>
+                <a class="nav-item nav-link servicenav" href="./index.html#servicesSection">Services</a>
+                <a class="nav-item nav-link contactnav" href="#footerSection">Contact</a>
+                <a class="nav-item nav-link pricingnav active" href="#">Pricing</a>
+
+            </div>
+        </div>
+
+
+        <div id="main"
+            style="width: 100%; position: fixed; z-index: 99999;background-color:  rgba(17, 17, 17, 0.857);box-shadow: #6e0a1e 0px 0px 6px 1px;">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+        </div>
+
+    </div>
+
+    <nav class="navbar mt-0 p-0 navbar-expand-lg navbar-dark " id="navbar">
+
+
+        <div class="  navbar-collapse py-4 mt-0  " id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto mr-5">
+                <a class="nav-item nav-link homenav" href="./index.html#">Home </a>
+                <a class="nav-item nav-link aboutnav" href="./index.html#aboutSection">About</a>
+                <a class="nav-item nav-link servicenav" href="./index.html#servicesSection">Services</a>
+                <a class="nav-item nav-link contactnav" href="#footerSection">Contact</a>
+                <a class="nav-item nav-link pricingnav active" href="#">Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="intro-service  row  align-items-center">
+        <div class="container">
+            <div class="xyzs">
+
+                <h1 class="display-4 services-header font-weight-bold ">&lt;/&gt; Pricing and Packages </h1>
+            </div>
+
+        </div>
+    </header>
+    <!-- <section class="about mb-5 py-5" id="aboutSection">
+        <div class="container-fluid mt-5">
+            <div class="row pt-5 justify-content-center align-items-center">
+                <div class="col-sm-12 col-md-6 col-lg-4 text-center ">
+                    <img src="./assets/img/about.png" alt="Rahul Img" class="border border-dark"
+                        style="border-radius: 50%; max-width: 80%;max-height: 80%;box-shadow: #c3073f5c 6px 5px 70px 20px ;position: sticky;top:100px">
+                </div>
+                <div class="col-sm-12 col-md-6  col-lg-6">
+                    <h1 class=" about-main" data-aos="fade-right">ABOUT</h1>
+                    <div class=" py-0 px-3">
+
+                        <h5 class=" lead about-sub font-weight-bold px-1" data-aos="fade-in" data-aos-delay="200"
+                            style="text-shadow:#000 4px 2px 10px">
+                            Hi I'm Rahul Mahato
+                        </h5>
+
+
+
+                        <div id="typed1" class="lead font-weight-normal text-justify pb-3" style="min-height: 300px;">
+                        </div>
+
+
+                        <a class="resume py-1  mb-4 text-primary-2 font-weight-bold" data-aos="fade-in"
+                            href="./assets/Rahul Resume.pdf" target="_blank">Check Out my
+                            resume</a>
+                    </div>
+
+                    <div class="social-connect ml-1 py-5 my-4 d-flex row " data-aos="fade-in">
+                        <p class="px-3  text-secondary d-inline-block col-sm-12 col-md-4  pt-1 align-self-center">
+                            Connect
+                            with me </p>
+                        <div class="col-md-8 col-sm-12">
+
+
+
+                            <a href="https://www.facebook.com/rocker785" class="col-sm-2 px-2" target="_blank"><i
+                                    class="fa fa-facebook fa-2x  text-primary-2" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/rahul-mahato-550692176" class="col-sm-2   px-2"
+                                target="_blank"><i class="fa fa-linkedin fa-2x  text-primary-2"
+                                    aria-hidden="true"></i></a>
+
+                            <a href="https://github.com/rocker785" target="_blank" class="col-sm-2  px-2"><i
+                                    class="fa fa-github fa-2x text-primary-2" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/_.rahul_mahato/" target="_blank"
+                                class="col-sm-2  px-2"><i class="fa fa-instagram fa-2x text-primary-2"
+                                    aria-hidden="true"></i></a>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <hr class="col-8 my-5 mx-auto bg-light" />
+    </section> -->
+    <!-- <section class="services mb-5 " id="servicesSection">
+
+        <div class="container-fluid text-light">
+            <div class="row justify-content-center">
+                <div class="col-sm-11 col-md-5 py-5 align-self-center text-center " style="background-color: #c3073f;">
+                    <div class="services-left " data-aos="fade-right">
+
+                        <h2 class=" pb-4 display-3  font-weight-bold row justify-content-center "><span
+                                class=" lead font-weight-bold  align-self-center mx-2">What</span>
+                            Services <span class=" lead font-weight-bold  align-self-end mx-2 ">I provide</span>
+                        </h2><br />
+                        <img src="./assets/img/services-left2.svg" width="60%" class="my-5" />
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-7 py-3 text-light1">
+                    <img src="./assets/img/services.svg" class=""
+                        style="opacity: 0.08;position: absolute;height: 40%;max-width: 100%; max-height: 100%;" />
+                    <div class="row text-center">
+
+                        <div class="col-sm-10 col-md-11 " data-aos="fade-up">
+                            <div class="row justiy-content-center ">
+                                <div class="col-sm-10 col-md-2 align-self-center">
+                                    <img src="./assets/img/backend.svg" width="80%" />
+                                </div>
+                                <div class="col-sm-12 col-md-10">
+                                    <h4 class="my-4 font-weight-normal">Back End Development</h4>
+                                    <p class="text-justify ">I develop Backend of websites and APIs using NodeJs which
+                                        is an open-source, cross-platform, JavaScript runtime environment </p>
+                                </div>
+                            </div>
+                            <hr class="bg-secondary" />
+                        </div>
+                        <div class="col-sm-10 col-md-11" data-aos="fade-up">
+                            <div class="row">
+                                <div class="col-sm-10 col-md-2 align-self-center">
+
+                                    <img src="./assets/img/frontend.svg" width="80%" />
+                                </div>
+                                <div class="col-sm-12 col-md-10">
+                                    <h4 class="my-4  font-weight-normal">Front End Development</h4>
+                                    <p class="text-justify  font-weight-normal">I develop Frontend for websites using
+                                        HTML,CSS and javascript . I also have a good hands on ReactJs and have also done
+                                        projects using Angular 7 . </p>
+                                </div>
+                            </div>
+                            <hr class="bg-secondary" />
+                        </div>
+                        <div class="col-sm-10 col-md-11" data-aos="fade-up">
+                            <div class="row">
+                                <div class="col-sm-5 col-md-2 align-self-center">
+                                    <img src="./assets/img/api.svg" style="width: 80%;" />
+                                </div>
+                                <div class="col-sm-12 col-md-10">
+                                    <h4 class="my-4 font-weight-normal">API Integration</h4>
+                                    <p class="text-justify"> I can also build and integrate APIs with the modern web
+                                        apps like ReactJs and AngularJs. Moreover I have experience of using Firebase
+                                        services with javascript . </p>
+
+                                </div>
+
+                            </div>
+                            <hr class="bg-secondary" />
+                        </div>
+                        <div class="col-sm-10 col-md-11" data-aos="fade-up">
+                            <div class="row">
+                                <div class="col-sm-10 col-md-2 align-self-center">
+                                    <img src="./assets/img/db.svg" width="80%" />
+                                </div>
+                                <div class="col-sm-12 col-md-10">
+                                    <h4 class="my-4 font-weight-normal">Database Design</h4>
+                                    <p class="text-justify">
+                                        I have good experience with both SQL based( MySql , Oracle , SQlLite ) as well
+                                        as NOSQL based database (MongoDb) and have worked on designing a lot of
+                                        databases models.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="bg-secondary" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section>
+        <div class="px-4 my-4 container  text-light">
+            <div class="" style="min-height: 400px;">
+
+                <!-- <h2 class="font-weight-bold h1 unerline my-4">First of all why should you hire me ?</h2> -->
+                <p class="font-weight-normal lead text-justify">Hire me if you want hassle free, no delay web app design
+                    and development
+                    quickly. Moreover I can provide a flexible timings to connect to you if required.
+                </p>
+                <p class="font-weight-normal lead text-justify ">I typically tend to take projects that require a good
+                    effort. I also
+                    have
+                    a team with some experienced members that helps me speedup the project and deliver it before the
+                    deadline.
+
+                </p>
+                <p class="font-weight-normal lead text-justify">I have categorized my pricing to various packages
+                    depending on your
+                    requirements. There is no hidden cost here,
+                    so you have everything you need to get your business started and flying high. Fill up the contact
+                    form
+                    on the
+                    contacts page, and we will start talking!</p>
+                <!-- <p class="font-weight-normal lead">
+                        You have to understand one thing that no businesses will pay from their pockets if they are giving same services at lower cost despite standard rates than you must be compromising with quality or running behind them to get your project completed ontime.
+                    </p> -->
+            </div>
+        </div>
+
+    </section>
+    <section class="pricing mt-5">
+        <div class="col-sm-12 col-md-10 col-lg-9 mx-auto">
+
+            <div class="row justify-content-center">
+
+                <div class=" col-sm-11 mb-5">
+                    <h3 class="h3 mb-4 underline">Starter Pack - for business just getting started.</h3>
+                    <table class="table table-responsive table-dark table-striped ">
+                        <thead>
+                            <th>No.</th>
+                            <th>Service Name & Description</th>
+                            <th class="px-5 text-center">Price</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01.</td>
+                                <td>
+                                    <h4>Static Websites ( 5 Pages )</h4>
+                                    <p class="">
+                                        A hardcoded website without a backend for client who wants to start and just
+                                        have an
+                                        online presence and display business information.
+                                    </p>
+                                </td>
+                                <td class="font-weight-bold text-center">Rs. 6499 </td>
+                            </tr>
+                            <tr>
+                                <td>02.</td>
+                                <td>
+                                    <h4>Static Websites ( 20 Pages )</h4>
+                                    <p class="">
+                                        A hardcoded website without a backend for client who wants to start and just
+                                        have an
+                                        online presence and display a lot of business information , policies and terms.
+                                    </p>
+                                </td>
+                                <td class="font-weight-bold text-center">Rs. 14499 </td>
+                            </tr>
+                            <tr>
+                                <td>03.</td>
+                                <td>
+                                    <h4>An E-Commerce Website</h4>
+                                    <p class="">
+                                        An E-Commerce Website made using modern technologies like node react and
+                                        MongoDb/Sql containing features like :
+                                        <ul>
+                                            <li>Cart</li>
+                                            <li>Checkout</li>
+                                            <li>Order Management</li>
+                                            <li>Inventory Management</li>
+                                            <li>Statistics</li>
+                                        </ul>
+                                    </p>
+                                </td>
+                                <td class="font-weight-bold text-center">Rs. 20999 </td>
+                            </tr>
+                            <tr>
+                                <td>03.</td>
+                                <td>
+                                    <h4>An Educational Website</h4>
+                                    <p class="">
+                                        An Educational Website made using modern technologies like node react and
+                                        MongoDb/Sql containing features like :
+                                        <ul>
+                                            <li>Admin Panel</li>
+                                            <li>Courses</li>
+                                            <li>Events</li>
+                                            <li>Secure Payment Integration</li>
+                                            <li>Course Materials</li>
+                                            
+                                        </ul>
+                                    </p>
+                                </td>
+                                <td class="font-weight-bold text-center">Rs. 23999 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-11">
+                    <h3 class="h3 mb-4 underline">Website Addons</h3>
+                    <table class="table table-responsive table-dark table-striped ">
+                        <thead>
+                            <th>No.</th>
+                            <th>Service Name & Description</th>
+                            <th class="px-5 text-center">Price</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-weight-bold"> 01.</td>
+                                <td>
+                                    <h4>Contact Form Integration</h4>
+                                    <p class="">
+                                        A contact form on the website itself allowing customers to write their queries,
+                                        requirements or requests – received directly on your selected email address.
+                                    </p>
+                                </td>
+                                <td class="font-weight-bold text-center">Rs. 399/- </td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">02.</td>
+                                <td>
+                                    <h4>Google Map Integration</h4>
+                                    <p class="">
+                                        A section displaying a particular location on map and allows users to directly
+                                        click to access the maps app on their phone and navigate
+                                    </p>
+                                </td>
+                                <td class="font-weight-bold text-center">Rs. 499/-</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">03.</td>
+                                <td>
+                                    <h4>User Login Module (Single/Multi)</h4>
+                                    <p class="">
+
+                                        A login module allowing registered users to perform actions which only they
+                                        themselves should legally be allowed to use.
+                                    </p>
+                                </td>
+                                <td class="font-weight-bold text-center">Rs. 599/- </td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-bold">04.</td>
+                                <td>
+                                    <h4>User Dashboard & Admin Panel</h4>
+                                    <p class="">
+
+                                        A customized dashboard containing all the statistical data, order history, or
+                                        other such
+                                        relevant details at a glance. <i>* includes user login module *</i>
+                                    </p>
+                                </td>
+                                <td class="font-weight-bold text-center">Rs. 999/- </td>
+                            </tr>
+
+                            <tr>
+                                <td class="font-weight-bold">05.</td>
+                                <td>
+                                    <h4>Live Chat Integration</h4>
+                                    <p class="">
+                                        A live chat feature on the website allowing admin to provide support, used my
+                                        sales, team to answer queries.
+
+                                    </p>
+                                </td>
+                                <td class="font-weight-bold text-center">Rs. 1199/-</td>
+                            </tr>
+                            <tr>
+                                <td>06.</td>
+                                <td>
+                                    <h4>Payment Gateway Integration</h4>
+                                    <p class="">
+
+                                        A payment gateway is required to receive and send money to clients at your shop.
+
+                                    </p>
+                                </td>
+                                <td class="font-weight-bold text-center">Rs. 1299/-</td>
+                            </tr>
+                            <tr>
+                                <td>07.</td>
+                                <td>
+                                    <h4>Web SEO & Page Speed Optimizing</h4>
+                                    <p class="">
+                                        The basic settings required to automatically boost search engine rankings online
+                                        on
+                                        google and other search engines.
+                                    </p>
+                                </td>
+                                <td class="font-weight-bold text-center">Rs. 1499/-</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials">
+
+        <div class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">...</div>
+                    <div class="owl-item">...</div>
+                    <div class="owl-item">...</div>
+                </div>
+            </div>
+            <div class="owl-nav">
+                <div class="owl-prev">prev</div>
+                <div class="owl-next">next</div>
+            </div>
+            <div class="owl-dots">
+                <div class="owl-dot active"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer mb-0 mt-5  " style="background-color: #000;padding-top: 80px;" id="footerSection"
+        data-aos="fade-in">
+        <div class="row pb-0 justify-content-center align-items-center">
+            <div class="col-sm-10 px-2 py-4 text-center order-md-1 col-md-6">
+
+                <div class="row justify-content-left mx-auto">
+                    <!-- contact form -->
+                    <div class="message col-sm-10 mb-3 "></div>
+                    <form class="col-sm-10 col-md-10" id="contactform">
+                        <div class="row justify-content-center px-4">
+
+                            <div class=" col-md-5 col-sm-12 my-2">
+                                <input type="name" class="form-control" placeholder="Name" name="name" id="name">
+                            </div>
+                            <div class=" col-md-5 col-sm-12 my-2">
+                                <input type="number" class="form-control" placeholder="Mobile" name="phone" id="phone"
+                                    max="9999999999" min="1000000000">
+                            </div>
+                            <div class=" col-md-10 col-sm-12 my-2">
+                                <input type="email" class="form-control" placeholder="Email" name="email" id="email">
+                            </div>
+                            <div class=" col-md-10 col-sm-12 my-2">
+                                <textarea rows="4" placeholder="Message" class="col-auto form-control " name="message"
+                                    id="message"></textarea>
+                            </div>
+                            <div class="col-md-5 col-sm-8 mt-4">
+                                <button class="px-5 btn btn-outline-danger" style="border-radius: 0;">submit</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                    <!-- contact form ends -->
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5   order-md-2 order-first text-secondary2">
+                <div class="row text-left px-3 ">
+                    <div class="col-12 mb-4 ">
+
+                        <div class="contact-main border-bottom pb-2">Dont Be a Stranger</div>
+                        <span class="contact-sub ">Just Say Hello</span>
+                        <div id="typed-strings">
+                            <p class="lead">Feel free to get in touch with me I am always
+                                open to discussing new projects , creative ideas or opportunities to be a part of your
+                                visions
+                            </p>
+
+                        </div>
+                        <div id="typed2" class="text-light lead mt-3 text-justify"></div>
+                    </div>
+                    <div class="col-md-12 mb-4">
+
+
+
+                        <a href="https://www.facebook.com/rocker785" class="col-sm-2 px-2" target="_blank"><i
+                                class="fa fa-facebook fa-2x  text-primary-2" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/rahul-mahato-550692176" class="col-sm-2   px-2"
+                            target="_blank"><i class="fa fa-linkedin fa-2x  text-primary-2" aria-hidden="true"></i></a>
+                        <!-- <a href="#"><i class="fa fa-twitter fa-2x  text-primary-2" aria-hidden="true"></i></a> -->
+                        <a href="https://github.com/rocker785" target="_blank" class="col-sm-2  px-2"><i
+                                class="fa fa-github fa-2x text-primary-2" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/_.rahul_mahato/" target="_blank" class="col-sm-2  px-2"><i
+                                class="fa fa-instagram fa-2x text-primary-2" aria-hidden="true"></i></a>
+
+
+                    </div>
+                    <div class="col-sm-12  my-2 d-flex align-items-center">
+                        <div>
+
+                            <img src="./assets/img/email.svg" class="  align-self-center mr-2"
+                                style="width: 20px;" /><span class="align-self-center ">rahul.122293@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  my-2 d-flex align-items-center ">
+                        <img src="./assets/img/phone.svg" class="  align-self-center mr-2" style="width: 20px;" /><span
+                            class=" align-self-cesnter ">+91-7749803313</span>
+                    </div>
+                    <div class="col-sm-12  my-2 d-flex align-items-center ">
+                        <img src="./assets/img/house.svg" class="  align-self-center mr-2" style="width: 20px;" />
+                        <span class="align-self-center ">122/1D , Motilal Nehru Road , Kolkata -
+                            700029</span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-12 px-5 py-3 mt-5 order-sm-2  order-md-2 m-0 " style="background-color: black;">
+                &copy; Copyright 2020&nbsp; | &nbsp;All Rights Reserved&nbsp; | &nbsp;Designed by me
+            </div>
+        </div>
+    </section>
+
+    <!-- <script src="./assets/js/index.js"></script> -->
+    <!-- <script src="./assets/js/app.js"></script> -->
+
+    <script>
+
+
+        AOS.init();
+    </script>
+
+    <script>
+
+        // var typed = new Typed('#typed1', {
+        //     // strings: ["An undergraduate currently pursuing B.Tech in Computer Science.", "I have a keen interest in Full Stack Web Development and so I am searching for jobs/internships in that domain."],
+        //     strings: [`I am in 3rd year , currently pursuing B-Tech in Computer Science and Engineering from Kalinga Institute of Industrial Technology , Bhubaneshwar. I was born and brought up in kolkata.<br> I have a good knowledge in the area of Web Development using Javascript environments and libraries.
+        //                 I believe in good design and clean coding to build responsive and user friendly websites.<br>
+        //                 I have an experience of building all kinds e.g. Static, Responsive, Web apps from the scratch and I am working as a freelancer since October,2019 . 
+        //             `],
+        //     typeSpeed: 2
+        // });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", (e) => {
+            setTimeout(() => {
+                document.querySelector('.spinner-wrapper').classList.add("d-none");
+            }, 800)
+
+        })
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+    <script src="assets/js/charges.js"></script>
+    <script src="assets/js/firebase.js"></script>
+</body>
+
+</html>
