@@ -6,21 +6,22 @@ let footer = document.getElementById('footerSection');
 
 let contact = document.querySelectorAll('.contactnav');
 let pricing = document.querySelectorAll('.pricingnav');
-
+let whyme = document.querySelector('.whyme');
 
 window.addEventListener('scroll', (e) => {
 
-    // if (window.scrollY > aboutSection.offsetTop) {
-    //     document.getElementById('navbarNavAltMarkup').classList.add('bg-dark2')
-    //     document.querySelector('.navbar').style.boxShadow = "#6e0a1e 0px 0px 15px 1px"
-    // }
-    // else {
-    //     document.getElementById('navbarNavAltMarkup').classList.remove('bg-dark2')
-    //     document.querySelector('.navbar').style.boxShadow = "none"
-    // }
+    if (window.scrollY > whyme.offsetTop -100) {
+        document.getElementById('navbarNavAltMarkup').classList.add('bg-dark2')
+        document.querySelector('.navbar').style.boxShadow = "#6e0a1e 0px 0px 15px 1px"
+    }
+    else {
+        document.getElementById('navbarNavAltMarkup').classList.remove('bg-dark2')
+        document.querySelector('.navbar').style.boxShadow = "none"
+    }
 
 
     //contact
+    
     if (window.scrollY >= footer.offsetTop - 1200) {
         pricing.forEach(ele => ele.classList.remove('active'));
         contact.forEach(element => {
