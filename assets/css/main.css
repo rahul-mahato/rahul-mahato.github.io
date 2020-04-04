@@ -57,8 +57,8 @@ body,html {
 
 .intro-service {
   background-size: cover !important;
-  height: 50vh !important;
-  background: linear-gradient(rgba(0, 0, 0, 0.771),rgba(0, 0, 0, 0.420)), url('../img/services-cover.jpg');
+  height: 60vh !important;
+  background: linear-gradient(#6e0a1e89,#1a1a1d);
 }
 
 a{
@@ -221,7 +221,7 @@ a{
   }
   .intro-service {
 
-    height: 70vh !important;
+    height: 80vh !important;
   }
  
   i {
