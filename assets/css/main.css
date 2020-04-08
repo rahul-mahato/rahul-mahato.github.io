@@ -20,7 +20,7 @@ body,html {
 }
 
 .bg-rahul{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.565),rgba(0, 0, 0, 0.734)), url('../img/rahul.jpg') !important;
+  background-image:linear-gradient(rgba(41, 0, 0, 0.15),#101013), linear-gradient(to left,#030303,rgba(0, 0, 0, 0.435)) , url('../img/rahul.jpg') !important;
   background-size: auto 100% !important;
   background-repeat: no-repeat;
   
@@ -180,7 +180,7 @@ a{
 .about-main {
   font-size: 170px;
   letter-spacing: 10px;
-  color: #3838383d;
+  color: #3d3a3a55;
 
   font-weight: 900;
 }
@@ -219,6 +219,9 @@ a{
     color: #5f5f5f86;
     font-weight: 900;
   }
+  #typed1{
+    min-height: 550px !important;
+  }
   .about-sub {
     position: static;
     top: 50px;
@@ -228,7 +231,7 @@ a{
   }
 
   .bg-rahul{
-   background: linear-gradient(rgba(0, 0, 0, 0.531),rgba(0, 0, 0, 0.978)),url('../img/rahulmob.jpg') !important;
+   background: linear-gradient(rgba(0, 0, 0, 0.731),#101013),url('../img/rahulmob.jpg') !important;
     background-size:cover !important;
     background-position: center;
     background-repeat: no-repeat;
