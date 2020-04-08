@@ -15,8 +15,15 @@ body,html {
 }
 
 .intro {
-  background-size: cover !important;
-  height: 80vh !important;
+  /* background-size: cover !important; */
+  height: 110vh !important;
+}
+
+.bg-rahul{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.565),rgba(0, 0, 0, 0.734)), url('../img/rahul.jpg') !important;
+  background-size: initial !important;
+  background-repeat: no-repeat;
+  
 }
 .services-header{
   text-decoration: none;
@@ -66,10 +73,10 @@ a{
 }
 
 .bg-dark {
-  background-color: #0f0e0e !important;
+  background-color: #101013 !important;
 }
 .bg-dark2 {
-  background-color: #010102ef !important;
+  background-color: #040405ef !important;
 }
 
 .bg-secondary {
@@ -219,11 +226,21 @@ a{
     color: rgba(255, 255, 255, 0.898);
     
   }
+
+  .bg-rahul{
+   background: linear-gradient(rgba(0, 0, 0, 0.531),rgba(0, 0, 0, 0.978)),url('../img/rahulmob.jpg') !important;
+    background-size:cover !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
   .intro-service {
 
     height: 80vh !important;
   }
- 
+ .intro{
+   max-height: 100vh;
+ }
   i {
     border-radius: 50% !important;
 
@@ -343,7 +360,7 @@ i:hover {
   position: relative;
   font-size: 75px;
   letter-spacing: 3px;
-  color: #454545;
+  color: #6259593d;
   font-weight: 800;
 }
 
