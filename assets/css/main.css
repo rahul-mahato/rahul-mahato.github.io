@@ -20,7 +20,7 @@ body,html {
 }
 
 .bg-rahul{
-  background-image:linear-gradient(rgba(41, 0, 0, 0.15),#101013), linear-gradient(to left,#030303,rgba(0, 0, 0, 0.435)) , url('../img/rahul.jpg') !important;
+  background-image:linear-gradient(rgba(41, 0, 0, 0.15),#101013), linear-gradient(to left,#030303,rgba(0, 0, 0, 0.435)) , url('/assets/img/rahul.jpg') !important;
   background-size: auto 100% !important;
   background-repeat: no-repeat;
   
