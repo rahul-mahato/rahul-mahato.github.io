@@ -65,7 +65,7 @@ body,html {
 .intro-service {
   background-size: cover !important;
   height: 60vh !important;
-  background: linear-gradient(#6e0a1e89,#1a1a1d);
+  background: linear-gradient(to right,rgba(59, 0, 0, 0.204),rgba(0, 0, 0, 0.361)), linear-gradient(#0000008d,#000000),url('../img/services-cover2.jpg');
 }
 
 a{
@@ -78,7 +78,9 @@ a{
 .bg-dark2 {
   background-color: #040405ef !important;
 }
-
+.bg-dark3 {
+  background-color: #040405f8 !important;
+}
 .bg-secondary {
   background-color: #4e4e50 !important;
 }
@@ -229,7 +231,12 @@ a{
     color: rgba(255, 255, 255, 0.898);
     
   }
-
+.display-4{
+  font-size: 50px;
+}
+.services-header::after{
+  width: 100% !important;
+}
   .bg-rahul{
    background: linear-gradient(rgba(0, 0, 0, 0.731),#101013),url('../img/rahulmob.jpg') !important;
     background-size:cover !important;
